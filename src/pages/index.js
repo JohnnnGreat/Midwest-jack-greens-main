@@ -200,8 +200,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* <SubscribeForm /> */}
-      hello
+      <SubscribeForm />
+      
       <section className="photos">
         <div className="wrapper">
           <div className="grid-photos">
