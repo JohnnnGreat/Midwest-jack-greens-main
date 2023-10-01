@@ -1280,6 +1280,10 @@ p {
   height: 150px;
   object-fit: cover;
   border-radius: 100%;
+
+  @media (max-width: 567px) {
+    display: none;
+  }
 }
 
 .our-concerns {
@@ -1306,6 +1310,10 @@ p {
       grid-template-columns: repeat(3, 1fr);
       margin-top: 2rem;
       gap: 1rem;
+
+      @media (max-width: 500px) {
+        grid-template-columns: 1fr;
+      }
 
       .box {
         background: #141e20;
