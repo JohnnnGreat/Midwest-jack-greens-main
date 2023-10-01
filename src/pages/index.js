@@ -23,6 +23,7 @@ export default function Home() {
   }, []);
 
   React.useEffect(() => {
+    console.log(navigator.serviceWorker);
     const timer = setTimeout(() => {
       setShowPreloader(false);
     }, 4000);
@@ -222,34 +223,70 @@ export default function Home() {
           <section className="photos">
             <div className="wrapper">
               <div className="grid-photos">
-                <Image
+                <div
                   data-aos="fade-down"
                   data-aos-duration="1000"
-                  className="photos-img"
-                  src={ImageOne}
-                  alt="This is an image"
-                ></Image>
-                <Image
+                  className="image-p-container"
+                >
+                  <div className="_img-card">
+                    <div className="tag-crd">
+                      <h1>Lorem</h1>
+                    </div>
+                  </div>
+                  <Image
+                    className="photos-img"
+                    src={ImageOne}
+                    alt="This is an image"
+                  ></Image>
+                </div>
+                <div
                   data-aos="fade-left"
                   data-aos-duration="1000"
-                  className="photos-img"
-                  src={ImageTwo}
-                  alt="This is an image"
-                ></Image>
-                <Image
+                  className="image-p-container"
+                >
+                  <div className="_img-card">
+                    <div className="tag-crd">
+                      <h1>Lorem</h1>
+                    </div>
+                  </div>
+                  <Image
+                    className="photos-img"
+                    src={ImageTwo}
+                    alt="This is an image"
+                  ></Image>
+                </div>
+                <div
                   data-aos="fade-right"
                   data-aos-duration="1000"
-                  className="photos-img"
-                  src={ImageThree}
-                  alt="This is an image"
-                ></Image>
-                <Image
+                  className="image-p-container"
+                >
+                  <div className="_img-card">
+                    <div className="tag-crd">
+                      <h1>Lorem</h1>
+                    </div>
+                  </div>
+                  <Image
+                    className="photos-img"
+                    src={ImageThree}
+                    alt="This is an image"
+                  ></Image>
+                </div>
+                <div
                   data-aos="fade-up"
                   data-aos-duration="1000"
-                  className="photos-img"
-                  src={ImageFour}
-                  alt="This is an image"
-                ></Image>
+                  className="image-p-container"
+                >
+                  <div className="_img-card">
+                    <div className="tag-crd">
+                      <h1>Lorem</h1>
+                    </div>
+                  </div>
+                  <Image
+                    className="photos-img"
+                    src={ImageFour}
+                    alt="This is an image"
+                  ></Image>
+                </div>
               </div>
             </div>
           </section>
