@@ -62,7 +62,10 @@ export default function Home() {
             combined with soulful greens that will transport your taste buds to
             paradise."
         />
-        <meta property="og:image" content="../../../public/logo.png" />
+        <meta
+          property="og:image"
+          content="https://midwest-jack-greens-main.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.c8df4b2a.png&w=256&q=75"
+        />
       </Head>
       {/* Preloader Sec */}
       {preloader && <Preloader />}
