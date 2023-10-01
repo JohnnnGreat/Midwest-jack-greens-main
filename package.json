@@ -16,6 +16,7 @@
     "dotenv": "^16.3.1",
     "eslint": "8.49.0",
     "eslint-config-next": "13.5.2",
+    "framer-motion": "^10.16.4",
     "instafeed.js": "^2.0.0",
     "jsonp": "^0.2.1",
     "next": "13.5.2",
