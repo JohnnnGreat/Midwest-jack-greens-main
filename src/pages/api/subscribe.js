@@ -1,7 +1,11 @@
 import axios from "axios";
+import dotenv from "dotenv";
 
-export default async (req, res) => {
+dotenv.config();
+
+export default async function subscribe(req, res) {
   const { email } = req.body;
+  console.log(email);
 
   if (!email || !email.length) {
     return res.status(400).json({ error: "Email is required" });
@@ -37,4 +41,4 @@ export default async (req, res) => {
     console.log(error);
     return res.status(500).json({ error: error.message });
   }
-};
+}
