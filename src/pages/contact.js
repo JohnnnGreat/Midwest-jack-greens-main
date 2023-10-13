@@ -23,26 +23,43 @@ function Contact() {
     setIsloading(true);
     try {
       const { name, messagev, email } = value;
-      const response = await axios.post("/api/message", {
+      /*const response = await axios.post("/api/message", {
         name,
         email,
         messagev,
+      });*/
+      const response = await fetch("api/message", {
+        method: "POST",
+        body: JSON.stringify(value),
+        headers: {
+          "Content-Type": "application/json",
+        },
       });
       console.log(response);
 
-      if (response.data.success) {
-        console.log("sent");
-        setIsloading(false);
-        message.success(response.data.message);
+      // if (response.data.success) {
+      //   console.log("sent");
+      //   setIsloading(false);
+      //   message.success(response.data.message);
+      // } else {
+      //   setIsloading(false);
+      //   message.error(response.data.message);
+      // }
+      if (response.status === 500) {
+        message.error("An error Occured");
+        console.log(response);
       } else {
-        setIsloading(false);
-        message.error(response.data.message);
+        message.success("Message Sents Successfully");
+        console.log(response);
       }
     } catch (error) {
-      console.log(error);
-      setIsloading(false);
-      message.success("Message Sent");
-      return;
+      // console.log(error);
+      // setIsloading(false);
+      // message.success("Message Sent");
+      // return;
+
+      console.log(err);
+      message.error(err);
     }
   }
   return (
