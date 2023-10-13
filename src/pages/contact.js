@@ -28,6 +28,7 @@ function Contact() {
         email,
         messagev,
       });
+      console.log(response);
 
       if (response.data.success) {
         setIsloading(false);
@@ -37,6 +38,7 @@ function Contact() {
         message.error(response.data.message);
       }
     } catch (error) {
+      console.log(error);
       setIsloading(false);
       message.error("An Error Occured");
       return;
