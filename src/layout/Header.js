@@ -35,7 +35,7 @@ function Header() {
 
           <nav className={`${navOpen && "open-navigation"}`}>
             <i
-              class="ri-close-line close-nav"
+              className="ri-close-line close-nav"
               onClick={() => {
                 setNavOpen(false);
               }}
