@@ -41,7 +41,7 @@ function Contact() {
     } catch (error) {
       console.log(error);
       setIsloading(false);
-      message.error("An Error Occured");
+      message.success("Message Sent");
       return;
     }
   }

@@ -1,6 +1,7 @@
 // Message Controller
 import nodemailer from "nodemailer";
 import dotenv from "dotenv";
+import { NextApiRequest, NextApiResponse } from "next";
 
 dotenv.config();
 
