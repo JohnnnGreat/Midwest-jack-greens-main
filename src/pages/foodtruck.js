@@ -5,7 +5,6 @@ function FoodTruck() {
   return (
     <>
       <Header text="Food Truc" />
-      <div></div>
     </>
   );
 }

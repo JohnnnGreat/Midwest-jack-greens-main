@@ -1,6 +1,5 @@
-import { useMailChimp, Status } from "./hooks";
 import React, { useState } from "react";
-import { Success, Loading, Error } from "./State";
+
 import axios from "axios";
 
 function Subscribe() {
