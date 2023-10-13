@@ -48,9 +48,11 @@ function Contact() {
       if (response.status === 500) {
         message.error("An error Occured");
         console.log(response);
+        setIsloading(false);
       } else {
         message.success("Message Sents Successfully");
         console.log(response);
+        setIsloading(false);
       }
     } catch (error) {
       // console.log(error);

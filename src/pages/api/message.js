@@ -1,8 +1,6 @@
 // Message Controller
 import nodemailer from "nodemailer";
 
-dotenv.config();
-
 export default async function message(req, res) {
   console.log(req.body);
   try {
@@ -10,8 +8,10 @@ export default async function message(req, res) {
       const transporter = nodemailer.createTransport({
         service: "gmail",
         auth: {
-          user: process.env.USER_EMAIL,
-          pass: process.env.USER_PASSWORD,
+          // user: process.env.USER_EMAIL,
+          // pass: process.env.USER_PASSWORD,
+          user: "johnossai20@gmail.com",
+          pass: "kblgyogjwalbiwja",
         },
       });
       const mailData = {
@@ -94,15 +94,11 @@ export default async function message(req, res) {
 
       await transporter.sendMail(mailData);
 
-      res
-        .status(200)
-        .json({ success: true, message: "Message Sent Successfully" });
+      res.status(200).json({ success: true });
     }
   } catch (error) {
     console.error(error);
-    res
-      .status(500)
-      .json({ success: false, error: "Error sending email", message: error });
+    res.status(500).json({ success: false, error: "Error sending email" });
   }
   return res.status(400).json({ message: "Bad Request" });
 }
