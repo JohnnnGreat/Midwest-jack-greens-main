@@ -31,6 +31,7 @@ function Contact() {
       console.log(response);
 
       if (response.data.success) {
+        console.log("sent");
         setIsloading(false);
         message.success(response.data.message);
       } else {
