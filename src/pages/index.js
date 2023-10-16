@@ -10,7 +10,7 @@ import LogoImage from "../../public/logo.png";
 
 // Fedd Images
 import ImageOne from "../../public/Mac.jpg";
-import ImageTwo from "../../public/Rasta.jpg";
+import ImageTwo from "../../public/Rast.jpg";
 import ImageThree from "../../public/Sizzling.jpg";
 import ImageFour from "../../public/Yam.jpg";
 
@@ -252,7 +252,7 @@ export default function Home() {
                 >
                   <div className="_img-card">
                     <div className="tag-crd">
-                      <h1>Lorem</h1>
+                      <h1>Mac</h1>
                     </div>
                   </div>
                   <Image
@@ -268,7 +268,7 @@ export default function Home() {
                 >
                   <div className="_img-card">
                     <div className="tag-crd">
-                      <h1>Lorem</h1>
+                      <h1>Rasta pasta </h1>
                     </div>
                   </div>
                   <Image
@@ -284,7 +284,7 @@ export default function Home() {
                 >
                   <div className="_img-card">
                     <div className="tag-crd">
-                      <h1>Lorem</h1>
+                      <h1>Sizzling Shrimp</h1>
                     </div>
                   </div>
                   <Image

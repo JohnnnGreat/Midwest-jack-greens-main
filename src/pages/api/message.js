@@ -15,7 +15,7 @@ export default async function message(req, res) {
         },
       });
       const mailData = {
-        from: `Veronicas Kitchen New Message <${req.body.email}>`,
+        from: `Midwest New Message <${req.body.email}>`,
         to: "JOHN OSSAI <johnossai20@gmail.com>",
         subject: `Message From ${req.body.name}`,
 

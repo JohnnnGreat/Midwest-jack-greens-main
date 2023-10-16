@@ -6,17 +6,19 @@ function Preloader() {
   return (
     <div className="preloader">
       <div className="preloader-container">
-        <Image
-          className="preloader-logo-img"
-          src={LogoImage}
-          alt="Preloader Logo Image"
-        />
+        <div className="preloader-main">
+          <Image
+            className="preloader-logo-img"
+            src={LogoImage}
+            alt="Preloader Logo Image"
+          />
+          <h1 className="preloader-text">MJG</h1>
+        </div>
         <div className="loader">
           <div className="box"></div>
           <div className="box"></div>
           <div className="box"></div>
         </div>
-        <p className="loading-txt">Loading...</p>
       </div>
     </div>
   );
