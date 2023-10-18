@@ -51,7 +51,7 @@ function Contact() {
         console.log(response);
         setIsloading(false);
       } else {
-        message.success("Message Sents Successfully");
+        message.success("Message Sent Successfully");
         console.log(response);
         setIsloading(false);
       }
