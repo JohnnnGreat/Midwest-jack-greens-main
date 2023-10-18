@@ -228,7 +228,7 @@ export default function Home() {
                     data-aos-duration="1000"
                   >
                     <div className="item-img-desc">
-                      MIDWEST JERT <br />
+                      MIDWEST JERK <br />
                       OXTAILS
                     </div>
                     <Image

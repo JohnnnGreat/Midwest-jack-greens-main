@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import { useForm } from "react-hook-form";
 import axios from "axios";
 import { message } from "antd";
+import Head from "next/head";
 
 function Contact() {
   const [loading, setIsloading] = useState(false);
@@ -66,6 +67,9 @@ function Contact() {
   }
   return (
     <>
+      <Head>
+        <title>Contact Us | MidWest Jerk</title>
+      </Head>
       <Header text="Contact Us" />
       <div className="contact">
         <div className="contact-wrapper">

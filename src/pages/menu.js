@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import Image from "next/image";
 import MenuImg from "../../public/MenuImg.jpg";
 import Link from "next/link";
+import Head from "next/head";
 
 function Menu() {
   const [mouseEnter, setMouseEnter] = React.useState(false);
@@ -16,37 +17,37 @@ function Menu() {
       id: 1,
       Name: "Oxtail Dinner",
       price: "$25",
-      imageSrc: "../../public/MenuImg.png",
+      imageSrc: MenuImg,
     },
     {
       id: 2,
       Name: "Jerk Mixed",
       price: "$20",
-      imageSrc: "/../../public/MenuImg.png",
+      imageSrc: MenuImg,
     },
     {
       id: 3,
       Name: "Shrimp Dinner",
       price: "$23",
-      imageSrc: "../../public/MenuImg.png",
+      imageSrc: MenuImg,
     },
     {
       id: 4,
       Name: "Oxtail Rice Bolw",
       price: "$15",
-      imageSrc: "../../public/MenuImg.png",
+      imageSrc: MenuImg,
     },
     {
       id: 5,
       Name: "Wing Dinner",
       price: "$18",
-      imageSrc: "../../public/MenuImg.png",
+      imageSrc: MenuImg,
     },
     {
       id: 6,
       Name: "Rasta Pasta",
       price: "$25",
-      imageSrc: "../../public/MenuImg.png",
+      imageSrc: MenuImg,
     },
   ];
 
@@ -71,6 +72,9 @@ function Menu() {
   ];
   return (
     <>
+      <Head>
+        <title>Menu | MidWest Jerk</title>
+      </Head>
       <Header text="Our Menu" />
       <section className="menu-p">
         <div className="menu-p__wrapper">
@@ -101,7 +105,7 @@ function Menu() {
                     </div>
                     <Image
                       className="menu-p-img"
-                      src={MenuImg}
+                      src={menuItem.imageSrc}
                       alt="Menu Item"
                     ></Image>
                   </div>

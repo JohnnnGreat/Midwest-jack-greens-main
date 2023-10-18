@@ -12,7 +12,6 @@ function Preloader() {
             src={LogoImage}
             alt="Preloader Logo Image"
           />
-          <h1 className="preloader-text">MJG</h1>
         </div>
         <div className="loader">
           <div className="box"></div>

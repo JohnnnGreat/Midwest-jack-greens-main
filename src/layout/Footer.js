@@ -9,7 +9,7 @@ const Footer = () => {
       {/* <div className="glare"></div> */}
       <div className="footer-wrapper">
         <div className="sm-follow">
-          <h1>FOLLOW ALONG</h1>
+          <h1>Follow Us</h1>
           <div className="social-media-ics">
             <Link
               href="https://www.facebook.com/profile.php?id=100090690231203&mibextid=LQQJ4d"
@@ -29,7 +29,7 @@ const Footer = () => {
         </div>
         <div className="divider"></div>
         <div className="cta-footer">
-          <h1>We look forward to dine with us</h1>
+          <h1>We looking Forward to Having You Dine With Us</h1>
           <div className="order-container">
             <Link className="link-on" href="/menu">
               Order Online

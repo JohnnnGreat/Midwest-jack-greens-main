@@ -35,13 +35,15 @@ function About() {
         />
         <meta
           property="og:image"
-          content="https://midwest-jack-greens-main.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.c8df4b2a.png&w=256&q=75"
+          content="https://www.midwestjerk.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.c8df4b2a.png&w=256&q=75"
         />
       </Head>
       <Header text="About" />
       <section className="about-desc">
         <div className="about-desc-wrapper">
-          <h1 className="content-header">About the company and the owner</h1>
+          <h1 className="content-header">
+            Bringing the Taste of the Tropics to You!
+          </h1>
           <h2 className="content-sub-header">
             Introducing Midwest Jerk and Greens: The Ultimate Caribbean Flavors!
           </h2>
