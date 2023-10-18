@@ -1599,8 +1599,10 @@ p {
     color: #e6e6e6;
     text-decoration: none;
     font-size: 18px;
-    font-weight: 100;
+    font-weight: 300;
     border-radius: 90px;
+    font-family: "Product Sans", sans-serif;
+    letter-spacing: 0.5px;
 
     &:hover {
       background-color: #f5d97c;
