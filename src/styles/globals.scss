@@ -1586,3 +1586,26 @@ p {
     height: 600px !important;
   }
 }
+
+.menu-ins {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+
+  .link-ins {
+    border: 1px solid #f5d97c;
+    padding: 0.9rem 1.5rem;
+    color: #e6e6e6;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 100;
+    border-radius: 90px;
+
+    &:hover {
+      background-color: #f5d97c;
+      color: #000;
+      transition: 300ms ease;
+    }
+  }
+}

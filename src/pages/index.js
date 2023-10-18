@@ -304,7 +304,7 @@ export default function Home() {
                 >
                   <div className="_img-card">
                     <div className="tag-crd">
-                      <h1>Yam</h1>
+                      <h1>Greens</h1>
                     </div>
                   </div>
                   <Image
@@ -313,6 +313,15 @@ export default function Home() {
                     alt="This is an image"
                   ></Image>
                 </div>
+              </div>
+              <div className="menu-ins">
+                <Link
+                  className="link-ins"
+                  target="_blank"
+                  href="https://www.instagram.com/mdwjerk"
+                >
+                  Follow us on instagram for location
+                </Link>
               </div>
             </div>
           </section>
