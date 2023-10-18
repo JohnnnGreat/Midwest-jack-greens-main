@@ -1578,10 +1578,10 @@ p {
     margin-top: 1.5rem;
   }
 
-  @media (max-width: 360px) {
-    height: 500px;
+  @media (max-width: 370px) {
+    height: 500px !important;
   }
-  @media (max-width: 567px) and (min-width: 320px) {
+  @media (max-width: 567px) and (min-width: 360px) {
     height: 700px;
   }
 }
