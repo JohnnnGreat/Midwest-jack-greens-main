@@ -127,8 +127,8 @@ function Menu() {
                 <p>{item.price}</p>
               </div>
             ))}
-          </div> */}
-          {/* <div className="dinner-sides">
+          </div>
+          <div className="dinner-sides">
             <p>Dinner comes w/2 sides Extra Side $6</p>
           </div> */}
           <Image src={PageOne} className="menu_img" alt="Page One for Meny" />
