@@ -8,87 +8,90 @@ export default async function message(req, res) {
       const transporter = nodemailer.createTransport({
         service: "gmail",
         auth: {
-          // user: process.env.USER_EMAIL,
-          // pass: process.env.USER_PASSWORD,
-          user: "johnossai20@gmail.com",
-          pass: "kblgyogjwalbiwja",
+          user: process.env.USER_EMAIL,
+          pass: process.env.USER_PASSWORD,
+          // user: "johnossai20@gmail.com",
+          // pass: "kblgyogjwalbiwja",
         },
       });
       const mailData = {
         from: `Midwest New Message <${req.body.email}>`,
-        to: "JOHN OSSAI <johnossai20@gmail.com>",
+        to: "TIMOTHY <timothy@macgrouptech.com>",
         subject: `Message From ${req.body.name}`,
 
         html: ` <!DOCTYPE html>
         <html lang="en">
-        
         <head>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Contact Form Email</title>
-          
-            <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+            <title>Contact Form Submission</title>
             <style>
                 body {
-                    font-family: 'Poppins', sans-serif;
-                    background-color: #f9f9f9;
+                    font-family: 'Arial', sans-serif;
+                    background-color: #f4f4f4;
                     margin: 0;
                     padding: 0;
                 }
         
                 .container {
                     max-width: 600px;
-                    margin: 0 auto;
-                    background-color: #ffffff;
-                    padding: 30px;
-                    border-radius: 10px;
-                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                    margin: 50px auto;
+                    background-color: #fff;
+                    padding: 20px;
+                    border-radius: 8px;
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
                 }
         
-                h1 {
-                    color: #333;
-                    text-align: center;
+                h2 {
+                    color: #000;
+                    border-bottom: 2px solid #3498db;
+                    padding-bottom: 10px;
+                    font-size:2rem;
                 }
         
                 p {
-                    font-size: 18px;
-                    line-height: 1.6;
-                    color: #555;
+                    color: #666;
+                    line-height: 1;
+                    font-size:1rem;
                 }
         
-                .contact-info {
-                    margin-top: 30px;
+                .user-info {
+                    margin-bottom: 20px;
                 }
         
-                .contact-info strong {
+                .info-label {
+                    font-weight: bold;
                     color: #333;
-                    display: block;
-                    margin-bottom: 10px;
+                    font-size:1.5rem;
                 }
         
-                img {
-                    max-width: 100%;
-                    height: auto;
+                .info-value {
+                    color: #3498db;
+                    font-size:1.21rem;
+                }
+        
+                .message {
                     margin-top: 20px;
-                    border-radius: 5px;
-                    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
                 }
             </style>
         </head>
-        
         <body>
             <div class="container">
-                <h1>Contact Form Submission</h1>
-                <p>You've just received a new message from the website contact form:</p>
-                <div class="contact-info">
-                    <strong>Name:</strong> ${req.body.name}<br>
-                    <strong>Email:</strong> ${req.body.email}<br>
+                <h2>Contact Form Submission</h2>
+                <p>Below are the details of a new contact form submission:</p>
+        
+                <div class="user-info">
+                    <p class="info-label">Name:</p>
+                    <p class="info-value">${req.body.name}</p>
+        
+                    <p class="info-label">Email:</p>
+                    <p class="info-value">${req.body.email}</p>
                 </div>
-                <p><strong>Message:</strong> ${req.body.messagev}</p>
-                <div><img src="https://midwest-jack-greens-main-timothy-macgrouptech.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.c8df4b2a.png&w=256&q=75" alt="Logo"></div>
+        
+                <p class="info-label">Message:</p>
+                <p class="message">${req.body.messagev}</p>
             </div>
         </body>
-        
         </html>`,
       };
 
