@@ -6,37 +6,9 @@ function About() {
   return (
     <>
       <Head>
-        <title>HOME | Midwest Jerk & Green</title>
-        <meta
-          name="description"
-          content="Craving a taste of the tropics right here in the Midwest? Look no
-          further! At Midwest Jerk and Greens, we bring you the vibrant and
-          mouthwatering flavors of authentic jerk chicken and ox tails,
-          combined with soulful greens that will transport your taste buds to
-          paradise."
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <title>About Us | Midwest Jerk & Green</title>
 
-        {/* Facebook Open Graph */}
-        <meta
-          property="og:url"
-          content="https://www.facebook.com/profile.php?id=100090690231203&mibextid=LQQJ4d"
-        />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="HOME | Midwest Jerk & Green" />
-        <meta
-          property="og:description"
-          content="Craving a taste of the tropics right here in the Midwest? Look no
-            further! At Midwest Jerk and Greens, we bring you the vibrant and
-            mouthwatering flavors of authentic jerk chicken and ox tails,
-            combined with soulful greens that will transport your taste buds to
-            paradise."
-        />
-        <meta
-          property="og:image"
-          content="https://www.midwestjerk.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.c8df4b2a.png&w=256&q=75"
-        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <Header text="About" />
       <section className="about-desc">
