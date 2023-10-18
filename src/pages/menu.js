@@ -4,24 +4,26 @@ import Image from "next/image";
 import MenuImg from "../../public/MenuImg.jpg";
 import Link from "next/link";
 import Head from "next/head";
+import PageOne from "../../public/PageOne.png";
+import PageTwo from "../../public/PageTwo.png";
 
 function Menu() {
   const [mouseEnter, setMouseEnter] = React.useState(false);
   const handlePlc = React.useRef(null);
 
-  React.useEffect(() => {
-    console.log(handlePlc.current.target);
-  }, []);
+  // React.useEffect(() => {
+  //   console.log(handlePlc.current.target);
+  // }, []);
   const menuItems = [
     {
       id: 1,
-      Name: "Oxtail Dinner",
-      price: "$25",
+      Name: "Whole Jerk Chicken",
+      price: "$24.00",
       imageSrc: MenuImg,
     },
     {
       id: 2,
-      Name: "Jerk Mixed",
+      Name: "Wings Only (6)",
       price: "$20",
       imageSrc: MenuImg,
     },
@@ -78,7 +80,7 @@ function Menu() {
       <Header text="Our Menu" />
       <section className="menu-p">
         <div className="menu-p__wrapper">
-          <div className="menu-p-grid">
+          {/* <div className="menu-p-grid">
             {menuItems.map((menuItem) => (
               <div className="menu-container" key={menuItem.id}>
                 {
@@ -125,10 +127,12 @@ function Menu() {
                 <p>{item.price}</p>
               </div>
             ))}
-          </div>
-          <div className="dinner-sides">
+          </div> */}
+          {/* <div className="dinner-sides">
             <p>Dinner comes w/2 sides Extra Side $6</p>
-          </div>
+          </div> */}
+          <Image src={PageOne} className="menu_img" alt="Page One for Meny" />
+          <Image src={PageTwo} className="menu_img" alt="Page Two for Menu" />
         </div>
       </section>
     </>

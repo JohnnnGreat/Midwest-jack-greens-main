@@ -300,7 +300,7 @@ export default function Home() {
                 >
                   <div className="_img-card">
                     <div className="tag-crd">
-                      <h1>Lorem</h1>
+                      <h1>Yam</h1>
                     </div>
                   </div>
                   <Image

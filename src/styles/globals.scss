@@ -1269,7 +1269,7 @@ p {
 
 //Menu Page Styling
 .menu-p {
-  padding: 5rem 0;
+  padding: 2rem 0;
   overflow: hidden;
   &__wrapper {
     max-width: 1000px;
@@ -1566,5 +1566,22 @@ p {
       width: 80px;
       height: 80px;
     }
+  }
+}
+
+.menu_img {
+  width: 100%;
+  object-fit: fill;
+  height: 1000px;
+
+  &:nth-child(2) {
+    margin-top: 1.5rem;
+  }
+
+  @media (max-width: 320px) {
+    height: 600px;
+  }
+  @media (max-width: 567px) and (min-width: 320px) {
+    height: 700px;
   }
 }
