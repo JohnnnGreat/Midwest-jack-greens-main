@@ -31,7 +31,7 @@ const Footer = () => {
         <div className="cta-footer">
           <h1>We looking Forward to Having You Dine With Us</h1>
           <div className="order-container">
-            <Link className="link-on" href="/menu">
+            <Link className="link-on" target="_blank" href="https://order.online/business/MidwestJerk-11458557?utm_source=sdk&visitorId=18ab7af25a04ad9bf">
               Order Online
             </Link>
           </div>

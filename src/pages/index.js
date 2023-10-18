@@ -216,7 +216,11 @@ export default function Home() {
                   </p>
                   <div className="items-cta">
                     <div className="price-tag">$25</div>
-                    <Link className="order" href="/">
+                    <Link
+                      className="order"
+                      target="_blank"
+                      href="https://order.online/business/MidwestJerk-11458557?utm_source=sdk&visitorId=18ab7af25a04ad9bf"
+                    >
                       ORDER ONLINE
                     </Link>
                   </div>
