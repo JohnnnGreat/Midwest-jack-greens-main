@@ -16,7 +16,7 @@ export default async function message(req, res) {
       });
       const mailData = {
         from: `Midwest New Message <${req.body.email}>`,
-        to: "TIMOTHY <timothy@macgrouptech.com>",
+        to: "MIDWEST JERK <capriciowilson@gmail.com>",
         subject: `Message From ${req.body.name}`,
 
         html: ` <!DOCTYPE html>
