@@ -1590,6 +1590,10 @@ p {
   @media (min-width: 370px) and (max-width: 567px) {
     height: 550px !important;
   }
+
+  @media (min-width: 567px) and (max-width: 800px) {
+    height: 800px !important;
+  }
 }
 
 .menu-ins {
