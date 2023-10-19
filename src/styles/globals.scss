@@ -1598,11 +1598,35 @@ p {
   }
 }
 
+.menu-btn-cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 1rem;
+  @media (max-width: 620px) {
+    flex-wrap: wrap;
+  }
+}
 .menu-ins {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 2rem;
+  margin-top: 1rem;
+
+  .link-on {
+    background: #f5d97c;
+    padding: 0.9rem 1.5rem;
+    color: #0b161a;
+    text-decoration: none;
+    border-radius: 90px;
+    font-family: "Product Sans", sans-serif;
+    letter-spacing: 0.5px;
+    font-weight: 800;
+
+    &:hover {
+      background: #ffcf32;
+    }
+  }
 
   .link-ins {
     border: 1px solid #f5d97c;

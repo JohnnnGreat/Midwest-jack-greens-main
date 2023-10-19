@@ -139,6 +139,27 @@ function Menu() {
             className="menu_img"
             alt="Page Three for Menu"
           />
+
+          <div className="menu-btn-cta">
+            <div className="menu-ins">
+              <Link
+                className="link-ins"
+                target="_blank"
+                href="https://www.instagram.com/mdwjerk"
+              >
+                Follow us on instagram for location
+              </Link>
+            </div>
+            <div className="menu-ins">
+              <Link
+                className="link-on"
+                target="_blank"
+                href="https://order.online/business/MidwestJerk-11458557?utm_source=sdk&visitorId=18ab7af25a04ad9bf"
+              >
+                Order Online
+              </Link>
+            </div>
+          </div>
         </div>
       </section>
     </>
