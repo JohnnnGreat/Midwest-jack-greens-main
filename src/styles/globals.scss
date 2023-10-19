@@ -1573,7 +1573,7 @@ p {
   width: 100%;
   // object-fit: contain;
   // line-height: co;
-  height: 1200px;
+  height: 1300px;
   background-color: #141e20;
 
   &:nth-child(2) {
@@ -1581,7 +1581,7 @@ p {
   }
 
   @media (max-width: 370px) {
-    height: 500px !important;
+    height: 450px !important;
   }
   @media (min-width: 360px) and (max-width: 567px) {
     height: 600px !important;
