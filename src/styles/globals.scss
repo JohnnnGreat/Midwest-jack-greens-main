@@ -1589,6 +1589,7 @@ p {
   }
   @media (min-width: 370px) and (max-width: 567px) {
     height: 550px !important;
+    object-fit: contain;
   }
 
   @media (min-width: 567px) and (max-width: 800px) {
