@@ -1580,6 +1580,10 @@ p {
     margin-top: 1.5rem;
   }
 
+  &:nth-child(3) {
+    margin-top: 1.5rem;
+  }
+
   @media (max-width: 370px) {
     height: 450px !important;
   }

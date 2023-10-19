@@ -6,6 +6,7 @@ import Link from "next/link";
 import Head from "next/head";
 import PageOne from "../../public/PageOne.png";
 import PageTwo from "../../public/PageTwo.png";
+import PageThree from "../../public/PageThree.png";
 
 function Menu() {
   const [mouseEnter, setMouseEnter] = React.useState(false);
@@ -133,6 +134,11 @@ function Menu() {
           </div> */}
           <Image src={PageOne} className="menu_img" alt="Page One for Meny" />
           <Image src={PageTwo} className="menu_img" alt="Page Two for Menu" />
+          <Image
+            src={PageThree}
+            className="menu_img"
+            alt="Page Three for Menu"
+          />
         </div>
       </section>
     </>
