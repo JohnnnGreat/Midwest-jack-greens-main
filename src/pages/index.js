@@ -210,12 +210,10 @@ export default function Home() {
                   data-aos-duration="1000"
                 >
                   <div className="divider"></div>
-                  <h1 className="first-text">MARINATED JERK OXTAILS</h1>
-                  <p className="second-text">
-                    Marinated oxtails overnight with 2 sides of your choice.
-                  </p>
+                  <h1 className="first-text">BONGO JERK WRAP</h1>
+                  <p className="second-text">Bongo Jerk wrap with chips.</p>
                   <div className="items-cta">
-                    <div className="price-tag">$25</div>
+                    <div className="price-tag">$15.00</div>
                     <Link
                       className="order"
                       target="_blank"
@@ -232,8 +230,7 @@ export default function Home() {
                     data-aos-duration="1000"
                   >
                     <div className="item-img-desc">
-                      MIDWEST JERK <br />
-                      OXTAILS
+                      BONGO JERK WRAP <br />
                     </div>
                     <Image
                       className="img-item"

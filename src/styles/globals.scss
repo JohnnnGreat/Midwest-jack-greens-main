@@ -72,6 +72,8 @@ $gold-txt: #f5d97c;
 
 body {
   background-color: $primary_bg;
+  user-select: none;
+  user-zoom: zoom;
 }
 
 .error-txt {
