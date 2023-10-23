@@ -82,7 +82,7 @@ function Header() {
                   className="link-nav"
                   href="/foodtruck"
                 >
-                  FOOD TRUCK
+                  Where we are
                 </Link>
               </li>
               <li>

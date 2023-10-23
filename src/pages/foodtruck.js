@@ -7,7 +7,7 @@ function FoodTruck() {
   useEffect(() => {
     const feed = new Instafeed({
       accessToken:
-        "IGQWRQS0o3QkRaVnhoN3BiSHptN0VMaUZAPQlFyU3pjYzhMYkhuaW9SOHNRMnRFWjFyaWdhVDVQeHNYV2M3Q3RWdHpfV3ZAyVDZAka1FVb29sb0RWMnFhY0wyb3IyRzJ2ZAWZA0a19VWDZADRlBTLW1MVzJ1ZAV9waGJsalkZD",
+        "IGQWRNY09QQkk4bU9lMW1rSmJxZA25SejdlSFk5UVJld0Q4M2RKb2hFd0dJTlZAuWTNUTlZApRDRjT1FCdTU1dkZAwUjU2bGV5ZA0tVdmgxRWRKZAU9FWjVoNG5xMTBOWmIzSFVVMHhIc0JCYjNlZAkFETkJrakJBUFVqNGMZD",
       target: "instafeed",
       limit: 20,
       resolution: "standard_resolution",
