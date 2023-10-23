@@ -30,11 +30,6 @@ const Footer = () => {
         <div className="divider"></div>
         <div className="cta-footer">
           <h1>We looking Forward to Having You Dine With Us</h1>
-          <div className="order-container">
-            <Link className="link-on" target="_blank" href="https://order.online/business/MidwestJerk-11458557?utm_source=sdk&visitorId=18ab7af25a04ad9bf">
-              Order Online
-            </Link>
-          </div>
         </div>
         <div className="logo-container">
           {/* <Image
@@ -43,7 +38,9 @@ const Footer = () => {
             alt="footer Logo image"
           ></Image> */}
         </div>
-        <h1 className="copyright">© 2023 by Midwest Jerk & Greens, Inc.</h1>
+        <h1 className="copyright">
+          © 2020 by Midwest Jerk & Greens, Inc. Powered by Macgroup Technologies
+        </h1>
       </div>
     </footer>
   );

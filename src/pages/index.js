@@ -91,11 +91,7 @@ export default function Home() {
                   </div>
                   <p className="desc">A Jamaican/Soul Cusine Company.</p>
                   <div className="link-flex">
-                    <Link
-                      className="link-order"
-                      target="_blank"
-                      href="https://order.online/business/MidwestJerk-11458557?utm_source=sdk&visitorId=18ab7af25a04ad9bf"
-                    >
+                    <Link className="link-order" href="/menu">
                       View Menu
                     </Link>
                   </div>
