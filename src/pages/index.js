@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import WrapperImage from "../../public/heroimg.jpg";
-import MenuImage from "../../public/MenuImg.jpg";
+import MenuImage from "../../public/sw.jpg";
 import SubscribeForm from "../components/Subscribe";
 import React from "react";
 import Head from "next/head";
@@ -148,7 +148,7 @@ export default function Home() {
 
                   <Image
                     className="menu-img"
-                    src={ImageOne}
+                    src={MenuImage}
                     alt="This is a menu Image"
                   ></Image>
                 </div>

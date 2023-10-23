@@ -6,8 +6,7 @@ function FoodTruck() {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
     const feed = new Instafeed({
-      accessToken:
-        "IGQWRNY09QQkk4bU9lMW1rSmJxZA25SejdlSFk5UVJld0Q4M2RKb2hFd0dJTlZAuWTNUTlZApRDRjT1FCdTU1dkZAwUjU2bGV5ZA0tVdmgxRWRKZAU9FWjVoNG5xMTBOWmIzSFVVMHhIc0JCYjNlZAkFETkJrakJBUFVqNGMZD",
+      accessToken: process.env.INSTAGRAM_API,
       target: "instafeed",
       limit: 20,
       resolution: "standard_resolution",
