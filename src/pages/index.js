@@ -96,7 +96,7 @@ export default function Home() {
                       target="_blank"
                       href="https://order.online/business/MidwestJerk-11458557?utm_source=sdk&visitorId=18ab7af25a04ad9bf"
                     >
-                      ORDER NOW
+                      View Menu
                     </Link>
                   </div>
                 </div>

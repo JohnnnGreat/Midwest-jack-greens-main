@@ -80,7 +80,7 @@ function Header() {
                     setNavOpen(false);
                   }}
                   className="link-nav"
-                  href=""
+                  href="/foodtruck"
                 >
                   FOOD TRUCK
                 </Link>

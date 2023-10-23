@@ -64,12 +64,55 @@ $gold-txt: #f5d97c;
   font-style: light;
 }
 
+.food-wrapper {
+  max-width: 1200px;
+  margin: auto;
+}
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
+#instafeed {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding: 1rem;
+
+  a {
+    color: #fff;
+  }
+  @media (max-width: 800px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+#instafeed img {
+  width: 100%;
+  margin-bottom: 2%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.p-loader {
+  height: 100vh;
+  display: flex;
+
+  justify-content: center;
+
+  p {
+    font-size: 5rem;
+    color: #717070;
+    font-weight: 800;
+  }
+}
+
+.cap {
+  font-size: 14px;
+  color: rgb(228, 228, 228);
+}
 body {
   background-color: $primary_bg;
   user-select: none;
