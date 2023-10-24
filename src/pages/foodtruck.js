@@ -8,19 +8,30 @@ function FoodTruck() {
   const [loading, setLoading] = useState(true);
   const [reels, setReels] = useState([]);
 
-  const access_token = process.env.INSTAGRAM_API;
-  console.log(process.env.INSTAGRAM_API);
+  // const access_token = process.env.INSTAGRAM_API;
+  // console.log(process.env.INSTAGRAM_API);
   useEffect(() => {
     const fetchReels = async () => {
       try {
-        const response = await fetch(
-          `https://graph.instagram.com/v12.0/me/media?fields=id,caption,media_type,media_url,thumbnail_url,permalink,timestamp&access_token=${access_token}`
-        );
-
+        // const response = await fetch("/api/instagram");
+        const response = await fetch("api/instagram", {
+          method: "GET",
+          // body: JSON.stringify(value),
+          headers: {
+            "Content-Type": "application/json",
+          },
+        });
         const data = await response.json();
-        console.log(data);
+        console.log(data.data);
 
-        setReels(response.data.data);
+        // const response = await fetch(
+        //   `https://graph.instagram.com/v12.0/me/media?fields=id,caption,media_type,media_url,thumbnail_url,permalink,timestamp&access_token=${access_token}`
+        // );
+
+        // const data = await response.json();
+        // console.log(data);
+        // console.log(data.data.data);
+        setReels(data.data.data);
       } catch (error) {
         console.error("Error fetching reels:", error);
       }

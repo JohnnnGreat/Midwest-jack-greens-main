@@ -12,7 +12,6 @@
 /.next/
 /out/
 
-next.config.js
 # production
 /build
 
