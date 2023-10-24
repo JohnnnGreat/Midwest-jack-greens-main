@@ -46,7 +46,7 @@ function Wherearewe() {
                 {reel.media_type === "VIDEO" ? (
                   <video className="video-ctr" autoPlay muted>
                     <source src={reel.media_url} type="video/mp4" />
-                    Your browser does not support the video tag.
+                    Your browser does support the video tag.
                   </video>
                 ) : (
                   <Image
