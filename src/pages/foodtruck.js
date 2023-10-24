@@ -15,7 +15,7 @@ function FoodTruck() {
     const fetchReels = async () => {
       try {
         const response = await fetch(
-          `https://graph.instagram.com/v12.0/me/media?fields=id,caption,media_type,media_url,thumbnail_url,permalink,timestamp&access_token=IGQWRQQW5meFdOYm41LXpKMWVKVlJKNGJuaHRyeklBcngzU21NRU1lMzFWTUdzcUFOS1dzVGZAMeUszZAmZAWN2hfWWp5aDlNX2N6V3ZAWd1kzY05jaXZAocWVfaW5sWTdRRUh5TG1PNUFwWldDTDdXZAHB2ekxDRldBMDgZD`
+          `https://graph.instagram.com/v12.0/me/media?fields=id,caption,media_type,media_url,thumbnail_url,permalink,timestamp&access_token=${access_token}`
         );
 
         const data = await response.json();
