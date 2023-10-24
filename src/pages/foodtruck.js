@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Header from "@/components/Header";
 import Image from "next/image";
 import axios from "axios";
@@ -11,6 +11,7 @@ function FoodTruck() {
 
   // const access_token = process.env.INSTAGRAM_API;
   // console.log(process.env.INSTAGRAM_API);
+
   useEffect(() => {
     const fetchReels = async () => {
       try {
@@ -25,13 +26,6 @@ function FoodTruck() {
         const data = await response.json();
         console.log(data.data);
 
-        // const response = await fetch(
-        //   `https://graph.instagram.com/v12.0/me/media?fields=id,caption,media_type,media_url,thumbnail_url,permalink,timestamp&access_token=${access_token}`
-        // );
-
-        // const data = await response.json();
-        // console.log(data);
-        // console.log(data.data.data);
         setReels(data.data.data);
       } catch (error) {
         console.error("Error fetching reels:", error);
@@ -41,40 +35,6 @@ function FoodTruck() {
     fetchReels();
   }, []);
 
-  // useEffect(() => {
-  //   const feed = new Instafeed({
-  //     accessToken: process.env.INSTAGRAM_API,
-  //     target: "instafeed",
-  //     limit: 20,
-  //     resolution: "standard_resolution",
-  //     userId: "58744712810",
-  //     template:
-  //       '<a href="{{link}}" target="_blank" rel="noopener noreferrer"><img src="{{image}}" /><span class="cap">{{caption}}</span></a>',
-  //     // <span class="cap">{{caption}}</span>
-
-  //     after: () => {
-  //       const images = document.querySelectorAll("#instafeed img");
-  //       const urls = new Set();
-  //       images.forEach((img) => {
-  //         const src = img.getAttribute("src");
-  //         if (urls.has(src)) {
-  //           img.remove(); // Remove the duplicate image
-  //           // captions[i].remove();
-  //         } else {
-  //           urls.add(src);
-  //         }
-  //       });
-  //       setLoading(false);
-  //       const captions = document.querySelectorAll("#instafeed span");
-  //       captions.forEach((caption) => {
-  //         const text = caption.textContent;
-  //         const truncated = text.substring(0, 80) + "...";
-  //         caption.textContent = truncated;
-  //       });
-  //     },
-  //   });
-  //   feed.run();
-  // }, []);
   return (
     <>
       <Header text="Food Truck" />
@@ -85,7 +45,7 @@ function FoodTruck() {
               <Link href={reel.permalink}>
                 {/* <h2>{reel.caption}</h2> */}
                 {reel.media_type === "VIDEO" ? (
-                  <video className="video-ctr" controls autoplay>
+                  <video className="video-ctr" autoPlay muted>
                     <source src={reel.media_url} type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>

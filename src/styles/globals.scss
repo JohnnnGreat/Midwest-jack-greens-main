@@ -67,12 +67,17 @@ $gold-txt: #f5d97c;
 .food-wrapper {
   max-width: 1200px;
   margin: auto;
+  padding: 1rem;
 
   .food-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     place-content: center;
     gap: 2rem;
+
+    @media (max-width: 567px) {
+      grid-template-columns: 1fr;
+    }
 
     div {
       border-radius: 10px;
