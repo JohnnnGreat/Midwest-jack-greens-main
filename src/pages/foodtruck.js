@@ -3,17 +3,23 @@ import Header from "@/components/Header";
 import Image from "next/image";
 import axios from "axios";
 import Instafeed from "instafeed.js";
+require("dotenv").config();
 
 function FoodTruck() {
   const [loading, setLoading] = useState(true);
   const [reels, setReels] = useState([]);
 
+  const access_token = process.env.INSTAGRAM_API;
+
   useEffect(() => {
     const fetchReels = async () => {
       try {
-        const response = await axios.get(
-          `https://graph.instagram.com/v12.0/me/media?fields=id,caption,media_type,media_url,thumbnail_url,permalink,timestamp&access_token=IGQWRNbTRia3l6U1ZAnMlVlSGlhZA1djMHBjTjJFVWJZAVjdyY0ttb2dYc0JleFBuRERXeUNMSU14cFlsNkxwdVNKaXpkMmFCaWFkRUpVc1U0SFE5NmF2MGpGTkI3SmVObHF4Ykh3QzcybUpBeFhWUnhGX1FvOVgwcGsZD`
+        const response = await fetch(
+          `https://graph.instagram.com/v12.0/me/media?fields=id,caption,media_type,media_url,thumbnail_url,permalink,timestamp&access_token=IGQWRQQW5meFdOYm41LXpKMWVKVlJKNGJuaHRyeklBcngzU21NRU1lMzFWTUdzcUFOS1dzVGZAMeUszZAmZAWN2hfWWp5aDlNX2N6V3ZAWd1kzY05jaXZAocWVfaW5sWTdRRUh5TG1PNUFwWldDTDdXZAHB2ekxDRldBMDgZD`
         );
+
+        const data = await response.json();
+        console.log(data);
 
         setReels(response.data.data);
       } catch (error) {
