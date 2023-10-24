@@ -5,7 +5,7 @@ import axios from "axios";
 import Instafeed from "instafeed.js";
 import Link from "next/link";
 
-function FoodTruck() {
+function Wherearewe() {
   const [loading, setLoading] = useState(true);
   const [reels, setReels] = useState([]);
 
@@ -24,7 +24,6 @@ function FoodTruck() {
           },
         });
         const data = await response.json();
-        console.log(data.data);
 
         setReels(data.data.data);
       } catch (error) {
@@ -68,4 +67,4 @@ function FoodTruck() {
   );
 }
 
-export default FoodTruck;
+export default Wherearewe;

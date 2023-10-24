@@ -1,7 +1,6 @@
 import axios from "axios";
 
 export default async function instagram(req, res) {
-  console.log(process.env.INSTAGRAM_API);
   try {
     if (req.method === "GET") {
       const response = await axios.get(

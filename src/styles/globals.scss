@@ -996,7 +996,7 @@ p {
       .photos-img {
         width: 100%;
         height: 300px;
-        animation: imageMove 10s infinite alternate-reverse ease;
+        animation: imageMove 20s infinite alternate-reverse ease;
         object-fit: cover;
 
         @media (max-width: 567px) {
