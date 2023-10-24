@@ -49,9 +49,7 @@ function Wherearewe() {
                     Your browser does support the video tag.
                   </video>
                 ) : (
-                  <Image
-                    width={400}
-                    height={400}
+                  <img
                     className="reel-img"
                     src={reel.media_url}
                     alt={reel.caption}

@@ -210,13 +210,13 @@ export default function Home() {
                   <p className="second-text">Bongo Jerk wrap with chips.</p>
                   <div className="items-cta">
                     <div className="price-tag">$15.00</div>
-                    <Link
+                    {/* <Link
                       className="order"
                       target="_blank"
                       href="https://order.online/business/MidwestJerk-11458557?utm_source=sdk&visitorId=18ab7af25a04ad9bf"
                     >
                       ORDER ONLINE
-                    </Link>
+                    </Link> */}
                   </div>
                 </div>
                 <div className="second-sec">
@@ -231,7 +231,7 @@ export default function Home() {
                     <Image
                       className="img-item"
                       alt="This is an image"
-                      src={ImageTwo}
+                      src={MenuImage}
                     ></Image>
                   </div>
                 </div>
