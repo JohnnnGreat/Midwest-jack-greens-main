@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import Image from "next/image";
 import axios from "axios";
 import Instafeed from "instafeed.js";
+import Link from "next/link";
 
 function FoodTruck() {
   const [loading, setLoading] = useState(true);
@@ -78,20 +79,30 @@ function FoodTruck() {
     <>
       <Header text="Food Truck" />
       <div className="food-wrapper">
-        {/* {loading && (
-          <div className="p-loader">
-            {" "}
-            <p>Loading...</p>
-          </div>
-        )} */}
-        {reels.map((reel) => (
-          <div key={reel.id}>
-            <h2>{reel.caption}</h2>
-            <img src={reel.thumbnail_url} alt={reel.caption} />
-            {/* Add other reel details as needed */}
-          </div>
-        ))}
-        <div id="instafeed"></div>
+        <div className="food-grid">
+          {reels.map((reel) => (
+            <div key={reel.id}>
+              <Link href={reel.permalink}>
+                {/* <h2>{reel.caption}</h2> */}
+                {reel.media_type === "VIDEO" ? (
+                  <video className="video-ctr" controls autoplay>
+                    <source src={reel.media_url} type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                ) : (
+                  <img
+                    className="reel-img"
+                    src={reel.media_url}
+                    alt={reel.caption}
+                  />
+                )}
+
+                {/* Add other reel details as needed */}
+              </Link>
+            </div>
+          ))}
+        </div>
+        {/* <div id="instafeed"></div> */}
       </div>
     </>
   );
