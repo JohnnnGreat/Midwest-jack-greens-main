@@ -3,14 +3,13 @@ import Header from "@/components/Header";
 import Image from "next/image";
 import axios from "axios";
 import Instafeed from "instafeed.js";
-require("dotenv").config();
 
 function FoodTruck() {
   const [loading, setLoading] = useState(true);
   const [reels, setReels] = useState([]);
 
   const access_token = process.env.INSTAGRAM_API;
-
+  console.log(process.env.INSTAGRAM_API);
   useEffect(() => {
     const fetchReels = async () => {
       try {
