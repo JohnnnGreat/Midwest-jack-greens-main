@@ -36,7 +36,7 @@ function Wherearewe() {
 
   return (
     <>
-      <Header text="Food Truck" />
+      <Header text="Where are we" />
       <div className="food-wrapper">
         <div className="food-grid">
           {reels.map((reel) => (
@@ -49,7 +49,9 @@ function Wherearewe() {
                     Your browser does not support the video tag.
                   </video>
                 ) : (
-                  <img
+                  <Image
+                    width={400}
+                    height={400}
                     className="reel-img"
                     src={reel.media_url}
                     alt={reel.caption}
