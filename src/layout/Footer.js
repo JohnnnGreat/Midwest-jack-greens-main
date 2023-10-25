@@ -39,7 +39,14 @@ const Footer = () => {
           ></Image> */}
         </div>
         <h1 className="copyright">
-          © 2020 by Midwest Jerk & Greens, Inc. Powered by Macgroup Technologies
+          © 2020 by Midwest Jerk & Greens, Inc. Powered by
+          <Link
+            className="footer-link"
+            href="https://www.macgrouptech.com/"
+            target="_blank"
+          >
+            MacGroup Technologies
+          </Link>
         </h1>
       </div>
     </footer>

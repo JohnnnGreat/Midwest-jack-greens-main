@@ -150,15 +150,6 @@ function Menu() {
                 Follow us on instagram for location
               </Link>
             </div>
-            <div className="menu-ins">
-              <Link
-                className="link-on"
-                target="_blank"
-                href="https://order.online/business/MidwestJerk-11458557?utm_source=sdk&visitorId=18ab7af25a04ad9bf"
-              >
-                Order Online
-              </Link>
-            </div>
           </div>
         </div>
       </section>

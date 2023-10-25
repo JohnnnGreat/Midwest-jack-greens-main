@@ -9,7 +9,7 @@ import Preloader from "@/components/Preloader";
 import LogoImage from "../../public/logo.png";
 
 // Fedd Images
-import ImageOne from "../../public/Mac.jpg";
+import ImageOne from "../../public/jerk.jpg";
 import ImageTwo from "../../public/Rast.jpg";
 import ImageThree from "../../public/Sizzling.jpg";
 import ImageFour from "../../public/Yam.jpg";
@@ -148,7 +148,7 @@ export default function Home() {
 
                   <Image
                     className="menu-img"
-                    src={MenuImage}
+                    src={ImageTwo}
                     alt="This is a menu Image"
                   ></Image>
                 </div>
@@ -282,12 +282,12 @@ export default function Home() {
                 >
                   <div className="_img-card">
                     <div className="tag-crd">
-                      <h1>Greens</h1>
+                      <h1>Rasta Pasta</h1>
                     </div>
                   </div>
                   <Image
                     className="photos-img"
-                    src={ImageFour}
+                    src={ImageTwo}
                     alt="This is an image"
                   ></Image>
                 </div>

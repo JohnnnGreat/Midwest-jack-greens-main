@@ -4,6 +4,7 @@ import Image from "next/image";
 import axios from "axios";
 import Instafeed from "instafeed.js";
 import Link from "next/link";
+import Head from "next/head";
 
 function Wherearewe({ truck }) {
   const [loading, setLoading] = useState(true);
@@ -36,6 +37,11 @@ function Wherearewe({ truck }) {
 
   return (
     <>
+      <Head>
+        <title>Where are we | Midwest Jerk & Green</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </Head>
       <Header truck={true} text="Where are we" />
       <div className="food-wrapper">
         <div className="food-grid">
