@@ -1,14 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
 import WrapperImage from "../../public/heroimg.jpg";
+import TruckImage from "../../public/Truck.jpg";
 
-function HeaderSection({ text }) {
+function HeaderSection({ text, truck }) {
   return (
     <section className="header-page">
       <div className="header-p-wrapper">
         <div className="placeholder">
           <Image
-            src={WrapperImage}
+            src={truck ? TruckImage : WrapperImage}
             className="img"
             alt="Background Image"
           ></Image>

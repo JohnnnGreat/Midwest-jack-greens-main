@@ -249,7 +249,7 @@ export default function Home() {
                 >
                   <div className="_img-card">
                     <div className="tag-crd">
-                      <h1>Mac</h1>
+                      <h1>Jerk Chiken</h1>
                     </div>
                   </div>
                   <Image
@@ -265,12 +265,29 @@ export default function Home() {
                 >
                   <div className="_img-card">
                     <div className="tag-crd">
-                      <h1>Rasta pasta </h1>
+                      <h1>Mac Oxtails </h1>
                     </div>
                   </div>
                   <Image
                     className="photos-img"
                     src={ImageTwo}
+                    alt="This is an image"
+                  ></Image>
+                </div>
+
+                <div
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  className="image-p-container"
+                >
+                  <div className="_img-card">
+                    <div className="tag-crd">
+                      <h1>Greens</h1>
+                    </div>
+                  </div>
+                  <Image
+                    className="photos-img"
+                    src={ImageFour}
                     alt="This is an image"
                   ></Image>
                 </div>
@@ -287,22 +304,6 @@ export default function Home() {
                   <Image
                     className="photos-img"
                     src={ImageThree}
-                    alt="This is an image"
-                  ></Image>
-                </div>
-                <div
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                  className="image-p-container"
-                >
-                  <div className="_img-card">
-                    <div className="tag-crd">
-                      <h1>Greens</h1>
-                    </div>
-                  </div>
-                  <Image
-                    className="photos-img"
-                    src={ImageFour}
                     alt="This is an image"
                   ></Image>
                 </div>

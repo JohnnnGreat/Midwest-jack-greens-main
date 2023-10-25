@@ -14,7 +14,7 @@ function About() {
       <section className="about-desc">
         <div className="about-desc-wrapper">
           <h1 className="content-header">
-            Bringing the Taste of the Tropic to You!
+            Bringing the Taste of Tropic and Soul to You!
           </h1>
           <h2 className="content-sub-header">
             Introducing Midwest Jerk and Greens: The Ultimate Caribbean Flavors!

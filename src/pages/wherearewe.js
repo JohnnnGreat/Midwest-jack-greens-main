@@ -5,7 +5,7 @@ import axios from "axios";
 import Instafeed from "instafeed.js";
 import Link from "next/link";
 
-function Wherearewe() {
+function Wherearewe({ truck }) {
   const [loading, setLoading] = useState(true);
   const [reels, setReels] = useState([]);
 
@@ -36,7 +36,7 @@ function Wherearewe() {
 
   return (
     <>
-      <Header text="Where are we" />
+      <Header truck={true} text="Where are we" />
       <div className="food-wrapper">
         <div className="food-grid">
           {reels.map((reel) => (
