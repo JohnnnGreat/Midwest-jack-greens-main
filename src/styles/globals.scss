@@ -753,13 +753,15 @@ p {
           .price-tag {
             width: 100px;
             padding: 1rem;
-            background-color: $gold-txt;
+            background-color: #13262c;
             display: flex;
             align-items: center;
             justify-content: center;
             font-family: "Product Sans", sans-serif;
             border-radius: 90px;
             font-weight: 600;
+            color: #fff;
+            width: 100%;
 
             @media (max-width: 567px) {
               width: 100%;

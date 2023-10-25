@@ -149,7 +149,7 @@ export default function Home() {
 
                   <Image
                     className="menu-img"
-                    src={ImageTwo}
+                    src={ImageOne}
                     alt="This is a menu Image"
                   ></Image>
                 </div>
