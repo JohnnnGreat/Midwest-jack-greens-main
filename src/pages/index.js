@@ -13,6 +13,7 @@ import ImageOne from "../../public/jerk.jpg";
 import ImageTwo from "../../public/Rast.jpg";
 import ImageThree from "../../public/Sizzling.jpg";
 import ImageFour from "../../public/Yam.jpg";
+import ImageFive from "../../public/MacOx.JPG";
 
 export default function Home() {
   const [showModal, setShowModal] = React.useState(false);
@@ -270,7 +271,7 @@ export default function Home() {
                   </div>
                   <Image
                     className="photos-img"
-                    src={ImageTwo}
+                    src={ImageFive}
                     alt="This is an image"
                   ></Image>
                 </div>
