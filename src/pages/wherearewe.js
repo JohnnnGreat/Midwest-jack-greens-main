@@ -50,7 +50,7 @@ function Wherearewe({ truck }) {
               <Link href={reel.permalink}>
                 {/* <h2>{reel.caption}</h2> */}
                 {reel.media_type === "VIDEO" ? (
-                  <video className="video-ctr" autoPlay muted>
+                  <video className="video-ctr" autoPlay muted controls>
                     <source src={reel.media_url} type="video/mp4" />
                     Your browser does support the video tag.
                   </video>
