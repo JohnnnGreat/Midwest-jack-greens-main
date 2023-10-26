@@ -47,7 +47,7 @@ function Wherearewe({ truck }) {
         <div className="food-grid">
           {reels.map((reel) => (
             <div key={reel.id}>
-              <Link href={reel.permalink}>
+              <Link target="_blank" href={reel.permalink}>
                 {/* <h2>{reel.caption}</h2> */}
                 {reel.media_type === "VIDEO" ? (
                   <video className="video-ctr" autoPlay muted controls>
