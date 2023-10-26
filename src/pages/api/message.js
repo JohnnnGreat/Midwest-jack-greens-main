@@ -14,9 +14,10 @@ export default async function message(req, res) {
           // pass: "kblgyogjwalbiwja",
         },
       });
+      // <capriciowilson@gmail.com>
       const mailData = {
         from: `Midwest New Message <${req.body.email}>`,
-        to: "MIDWEST JERK <capriciowilson@gmail.com>",
+        to: "MIDWEST JERK <johnossai20@gmail.com>",
         subject: `Message From ${req.body.name}`,
 
         html: ` <!DOCTYPE html>

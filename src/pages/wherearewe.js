@@ -42,7 +42,7 @@ function Wherearewe({ truck }) {
 
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <Header truck={true} text="Where are we" />
+      <Header truck={true} text="Where are we ?" />
       <div className="food-wrapper">
         <div className="food-grid">
           {reels.map((reel) => (
