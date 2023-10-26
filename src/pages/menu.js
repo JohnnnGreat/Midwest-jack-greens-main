@@ -87,9 +87,9 @@ function Menu() {
       <Header text="Our Menu" />
       <section className="menu-p">
         <div className="menu-images">
-          <Image src={ImageOne} alt="Image"></Image>
-          <Image src={ImageTwo} alt="Image"></Image>
-          <Image src={ImageThree} alt="Image"></Image>
+          <Image src={ImageOne} className="image-m" alt="Image"></Image>
+          <Image src={ImageTwo} className="image-m" alt="Image"></Image>
+          <Image src={ImageThree} className="image-m" alt="Image"></Image>
         </div>
         <div className="menu-p__wrapper">
           {/* <div className="menu-p-grid">

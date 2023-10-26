@@ -1369,6 +1369,39 @@ p {
 .menu-p {
   padding: 2rem 0;
   overflow: hidden;
+  position: relative;
+
+  .menu-images {
+    .image-m {
+      width: 200px;
+      height: 200px;
+      position: absolute;
+      &:nth-child(1) {
+        top: 0;
+        right: 2rem;
+        z-index: -1;
+        border-radius: 100%;
+        object-fit: cover;
+      }
+
+      &:nth-child(2) {
+        bottom: 0;
+        right: 2rem;
+        z-index: -1;
+        border-radius: 100%;
+        object-fit: cover;
+      }
+
+      &:nth-child(3) {
+        bottom: 50%;
+        top: 50%;
+        left: 2rem;
+        z-index: -1;
+        border-radius: 100%;
+        object-fit: cover;
+      }
+    }
+  }
   &__wrapper {
     max-width: 1000px;
     margin: auto;
