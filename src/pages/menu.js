@@ -6,7 +6,13 @@ import Link from "next/link";
 import Head from "next/head";
 import PageOne from "../../public/PageOne.png";
 import PageTwo from "../../public/PageTwo.png";
-import PageThree from "../../public/PageThree.png";
+// import PageThree from "../../public/PageThree.png";
+
+import ImageOne from "../../public/jerk.jpg";
+import ImageTwo from "../../public/Rast.jpg";
+import ImageThree from "../../public/Sizzling.jpg";
+import ImageFour from "../../public/Yam.jpg";
+import ImageFive from "../../public/MacOx.JPG";
 
 function Menu() {
   const [mouseEnter, setMouseEnter] = React.useState(false);
@@ -80,6 +86,11 @@ function Menu() {
       </Head>
       <Header text="Our Menu" />
       <section className="menu-p">
+        <div className="menu-images">
+          <Image src={ImageOne} alt="Image"></Image>
+          <Image src={ImageTwo} alt="Image"></Image>
+          <Image src={ImageThree} alt="Image"></Image>
+        </div>
         <div className="menu-p__wrapper">
           {/* <div className="menu-p-grid">
             {menuItems.map((menuItem) => (
@@ -134,11 +145,11 @@ function Menu() {
           </div> */}
           <Image src={PageOne} className="menu_img" alt="Page One for Meny" />
           <Image src={PageTwo} className="menu_img" alt="Page Two for Menu" />
-          <Image
+          {/* <Image
             src={PageThree}
             className="menu_img"
             alt="Page Three for Menu"
-          />
+          /> */}
 
           <div className="menu-btn-cta">
             <div className="menu-ins">
