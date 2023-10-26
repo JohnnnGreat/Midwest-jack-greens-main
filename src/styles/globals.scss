@@ -1745,7 +1745,6 @@ p {
   margin-top: 1rem;
 
   .link-on {
-    background: #f5d97c;
     padding: 0.9rem 1.5rem;
     color: #0b161a;
     text-decoration: none;
@@ -1769,6 +1768,8 @@ p {
     border-radius: 90px;
     font-family: "Product Sans", sans-serif;
     letter-spacing: 0.5px;
+    background-color: rgba(20, 42, 50, 0.575);
+    backdrop-filter: blur(10px);
 
     &:hover {
       background-color: #f5d97c;

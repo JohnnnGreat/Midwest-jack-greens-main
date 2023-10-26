@@ -75,6 +75,7 @@ function About() {
                 left: "0",
                 width: "100%",
                 height: "90vh",
+                borderRadius: "90px",
               }}
               title="MDWJERK"
             ></iframe>
