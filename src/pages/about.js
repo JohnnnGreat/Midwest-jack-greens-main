@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "@/components/Header";
 import Head from "next/head";
-import Video from "../../public/MDJERK.mp4";
+// import Video from "../../public/MDWJERK.mp4";
 
 function About() {
   return (
@@ -58,8 +58,10 @@ function About() {
             unforgettable culinary journey, right here in the heart of Las
             Vegas.
           </p>
-          <video className="video-ctr" autoPlay muted>
-            <source src={Video} type="video/mp4" />
+        </div>
+        <div className="wrapper-video">
+          <video className="" autoPlay>
+            <source src="/MDWJERK.mp4" type="video/mp4" />
             Your browser does support the video tag.
           </video>
         </div>

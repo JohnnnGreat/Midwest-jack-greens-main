@@ -1153,6 +1153,18 @@ p {
 .about-desc {
   padding: 5rem 0;
 
+  .wrapper-video {
+    max-width: 800px;
+    margin: auto;
+    height: 100vh;
+    margin-top: 1rem;
+
+    video {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
   .about-desc-wrapper {
     max-width: 800px;
     margin: auto;
